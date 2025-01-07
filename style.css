@@ -1,5 +1,4 @@
 /* General Styles */
-/* Universal Hide Scrollbar */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,20 +6,7 @@ body {
     line-height: 1.6;
     background: #f0f4f8;
     color: #444;
-    overflow: hidden; /* Disable scroll altogether */
 }
-
-/* Allow scrolling while hiding scrollbar */
-body {
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scrollbar-width: none; /* Firefox-specific property */
-}
-
-body::-webkit-scrollbar {
-    width: 0; /* Chrome, Safari, Edge */
-    height: 0;
-}
-
 
 /* Header */
 header {
@@ -226,6 +212,8 @@ form input:focus, form textarea:focus {
     box-shadow: 0 0 8px rgba(102, 175, 233, 0.8);
 }
 
+
+
 form button {
     background: linear-gradient(90deg, #3b5998, #192f6a);
     color: #fff;
@@ -238,8 +226,6 @@ form button {
 form button:hover {
     background: linear-gradient(90deg, #4e73ba, #2c3e8c);
 }
-
-
 
 /* Footer */
 footer {
