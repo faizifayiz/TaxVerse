@@ -25,10 +25,11 @@ header nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 header nav ul li a {
@@ -40,6 +41,13 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #f4c542;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stack items vertically for small screens */
+        gap: 10px; /* Add spacing between items */
+    }
 }
 
 /* Home Section */
