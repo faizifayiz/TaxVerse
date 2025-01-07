@@ -1,4 +1,5 @@
 /* General Styles */
+/* Universal Hide Scrollbar */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -6,7 +7,20 @@ body {
     line-height: 1.6;
     background: #f0f4f8;
     color: #444;
+    overflow: hidden; /* Disable scroll altogether */
 }
+
+/* Allow scrolling while hiding scrollbar */
+body {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Firefox-specific property */
+}
+
+body::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, Edge */
+    height: 0;
+}
+
 
 /* Header */
 header {
@@ -225,10 +239,49 @@ form button:hover {
     background: linear-gradient(90deg, #4e73ba, #2c3e8c);
 }
 
+
+
 /* Footer */
 footer {
     background: #192f6a;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem; /* Smaller text for mobile */
+    }
+
+    #home h2 {
+        font-size: 1.5rem; /* Adjusted size */
+    }
+
+    #home p {
+        font-size: 0.9rem; /* Adjusted size */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #services h2, #about h2, #contact h2 {
+        font-size: 1.8rem; /* Slightly smaller for mobile */
+    }
+}
+
+@media (min-width: 769px) {
+    #home h1 {
+        font-size: 3rem; /* Larger text for larger screens */
+    }
+
+    #home h2 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
 }
