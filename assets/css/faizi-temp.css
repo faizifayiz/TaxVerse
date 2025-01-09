@@ -1233,43 +1233,81 @@ footer .contact-form button.filled-button:hover {
   margin-bottom: 0px;
 }
 
-
-
-/* Contact Information */
-
 .contact-information {
-	margin-top: 140px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between; /* Space out items evenly */
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
 }
 
+/* Each contact item (Phone, Email, WhatsApp) */
 .contact-information .contact-item {
-	padding: 60px 30px;
-	background-color: #f7f7f7;
-	text-align: center;
+    padding: 40px 30px;
+    background-color: #f7f7f7;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Adds space between each contact item */
+    flex: 1 1 30%; /* Flexbox - 3 items per row (adjust as needed) */
+    min-height: 250px; /* Ensure a minimum height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns text evenly within the container */
 }
 
+/* Icon Style */
 .contact-information .contact-item i {
-	color: #a4c639;
-	font-size: 48px;
-	margin-bottom: 40px;
+    color: #a4c639;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
+/* Heading Style */
 .contact-information .contact-item h4 {
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 0.25px;
-	margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
+/* Paragraph Text Style */
 .contact-information .contact-item p {
-	margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 16px;
 }
 
+/* Link Style */
 .contact-information .contact-item a {
-	font-weight: 600;
-	color: #a4c639;
-	font-size: 15px;
+    font-weight: 600;
+    color: #a4c639;
+    font-size: 15px;
+    text-decoration: none;
 }
 
+/* Hover Effects for Links */
+.contact-information .contact-item a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.contact-item .description {
+    margin-bottom: 20px; /* Add space between the description and the link */
+    color: #666;
+    font-size: 16px;
+}
+
+.contact-item .phone-link {
+    font-weight: 600;
+    color: #a4c639;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.contact-item .phone-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
 
 
 
