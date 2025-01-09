@@ -1291,23 +1291,7 @@ footer .contact-form button.filled-button:hover {
     color: #333;
     text-decoration: underline;
 }
-.contact-item .description {
-    margin-bottom: 20px; /* Add space between the description and the link */
-    color: #666;
-    font-size: 16px;
-}
 
-.contact-item .phone-link {
-    font-weight: 600;
-    color: #a4c639;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.contact-item .phone-link:hover {
-    color: #333;
-    text-decoration: underline;
-}
 
 
 
